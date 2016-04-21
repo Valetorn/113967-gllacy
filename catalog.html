@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Глейси(каталог)</title>
+</head>
+<body>
+    <header class="main-header">
+        <figure class="main-header__logo">
+            <img src="http://placehold.it/50x50" alt="GllasyShop">
+        </figure>
+        
+        <nav class="main-header__main-menu">
+            <ul class="main-menu__navigation">
+                <li class="navigation__catalog btn navigation__catalog--btn">
+                    <a href="#" class="cataog__link">Каталог</a>
+                    
+                    <ul class="navigation__hidden">
+                        <li class="hidden__item hidden__item--active"><a href="#" class="item__link item__link--active">Новинки</a></li>
+                        <li class="hidden__item hidden__item--active"><a href="#" class="item__link item__link--active">Сливочное</a></li>
+                        <li class="hidden__item hidden__item--active"><a href="#" class="item__link item__link--active">Щербеты</a></li>
+                        <li class="hidden__item hidden__item--active"><a href="#" class="item__link item__link--active">Фруктовый лед</a></li>
+                        <li class="hidden__item hidden__item--active"><a href="#" class="item__link item__link--active">Мелорин</a></li>
+                    </ul>
+                </li>
+                
+                <li class="navigation__delivery">
+                    <a href="#" class="dilivery__link">Доставка и оплата</a>
+                </li>
+                
+                <li class="navigation__about">
+                    <a href="#" class="about__link">О Компании</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="user-block">
+            <div class="user-block__search-block">
+                <a href="#" class="search-block__search search-block__search--active btn btn__user-block">
+                    <img src="http://placehold.it/50x50" alt="Лупа">
+                </a>
+                
+                <div class="search-block__search-hidden">
+                    <input type="search" placeholder="Что ищем?" id="search-field" class="search-hidden__input search-hidden__input--active">   
+                </div>
+            </div>
+               
+            <div class="user-block__login-block">
+                <a href="#" class="login-block__login login-block__login--active btn btn__user-block">
+                    <img src="http://placehold.it/50x50" alt="Вход">
+                    Вход
+                </a>
+                
+                <form action="#" method="post" class="login-block__login-form">
+                    <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-field" class="login-form__e-mail login-form__e-mail--active">
+                    
+                    <input type="password" name="password" placeholder="Пароль" id="password-field" class="login-form__password login-form__password--active">
+                    
+                    <input type="submit" name="enter" id="enter-field" value="Войти" class="login-form__btn login-form__btn--active btn">
+                    
+                    <p class="login-form__links">
+                        <a href="#" class="links__link-pass links__link-pass--active">Забыли пароль?</a>
+                        <a href="#" class="links__link-reg links__link-reg--active">Новая регистрация</a>
+                    </p>
+                </form>
+            </div>
+               
+            <div class="user-block__cart-block">
+                <a href="#" class="cart-block__cart cart-block__cart--active btn btn__user-block">
+                    <img src="http://placehold.it/50x50" alt="Корзина">
+                    2 товара
+                </a>
+                
+                <div class="cart-block__cart-hidden">
+                    <div class="cart-hidden__cart-content">
+                        <div class="cart-content__content1">
+                            <figure class="content1__product content1__product1">
+                               <img src="http://placehold.it/10x10" alt="Крестик" class="product1__del product-del">
+                               
+                               <img src="http://placehold.it/10x10" alt="Мороженное" class="product1__ice-cream product-del">
+                               
+                               <figcaption class="product1__ice-cream-comment ice-cream-comment">Пломбир с апельсиновым джемом</figcaption>
+                            </figure>
+                            
+                            <p class="content1__text content-text">
+                                1,5 кг х <span class="content1__text--grey content-text--grey">200 руб.</span> 300 руб.
+                            </p>
+                        </div>
+                           
+                        <div class="cart-content__content2">
+                            <figure class="content2__product content2__product2">
+                               <img src="http://placehold.it/10x10" alt="Крестик" class="product2__del product-del">
+                               
+                               <img src="http://placehold.it/10x10" alt="Мороженное" class="product2__ice-cream product-del">
+                               
+                            <figcaption class="product2__ice-cream-comment ice-cream-comment">Клубничный пломбир с присыпкой 
+                                                                                                 из белого шоколада</figcaption>
+                            </figure>
+                            
+                            <p class="content2__text content-text">
+                                1,5 кг х <span class="content2__text--grey content-text--grey">300 руб.</span> 450 руб.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-hidden__order">
+                        <p class="order__text">
+                            Итого: 750 руб.
+                        </p>
+                        
+                        <form action="#" method="post" class="order__order-form">
+                            <input type="submit" name="order" id="order-field" value="Оформить заказ" class="order-form__input">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p class="user-block__inform-working">
+                С 10 до 20, ежедневно
+            </p>
+                
+            <p class="user-block__inform-phone">
+                8 812 450-25-25
+            </p>
+        </div>
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__navigation-breadcrumbs">
+                <a href="" class="navigation-breadcrumbs__link">Главная  »</a>
+                <a href="" class="navigation-breadcrumbs__link">Каталог  » </a>
+                <a href="" class="navigation-breadcrumbs__link navigation-breadcrumbs__link--active">Сливочное</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="caption">Сливочное мороженое</h1>
+        
+        <form action="#" method="post" class="filter">
+            <div class="filter__sort">
+                <p class="sort__caption">Сортировка:</p>
+                <div class="sort__select-sort">
+                    <select name="sort" id="field-sort" class="select-sort__select">
+                        <option value="">по популярности</option>
+                        <option value="">сначала недорогие</option>
+                        <option value="">сначала недорогие</option>
+                        <option value="">по жирности</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter__cost">
+                <p class="cost__caption">Цена: </p>
+                <output name="from-to" class="range-output">100 руб. – 500 руб.</output>
+                
+               <div class="cost__range-filter">
+                    <div class="range-filter__range-controls">
+                        <div class="range-controls__scale">
+                            <div style="margin-left:50px;width:100px;" class="scale__bar"></div>
+                        </div>
+                        <div class="range-controls__toggle range-controls__min-toggle"></div>
+                        <div class="range-controls__toggle range-controls__max-toggle"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter__fatness">
+                <p class="fatness__caption">Жирность:</p>
+                
+                <fieldset class="fatness__percent-fatness">
+                    <input type="radio" class="percent-fatness__percent percent-fatness__percent--active" name="fatness" valur="0%" id="p0">
+                    <label for="p0" class="percent-fatness__label">0%</label>
+                    <input type="radio" class="percent-fatness__percent percent-fatness__percent--active" name="fatness" value="before 10%" id="p10">
+                    <label for="p10" class="percent-fatness__label">до 10%</label>
+                    <input type="radio" class="percent-fatness__percent percent-fatness__percent--active" name="fatness" value="before 30%" id="p30">
+                    <label for="p30" class="percent-fatness__label">до 30%</label>
+                    <input type="radio" class="percent-fatness__percent percent-fatness__percent--active" name="fatness" value="more 30%" id="more-p30">
+                    <label for="more-p30" class="percent-fatness__label">выше 30%</label>
+                </fieldset>
+            </div>
+            
+            <div class="filter__filling">
+                <p class="filling__caption">Наполнители:</p>
+                
+                <fieldset class="filling__filling-chose">
+                    <input type="checkbox" class="filling-chose__check filling-chose__check--active" name="chocolate" id="chocolate">
+                    <label for="chocolate" class="filling-chose__label">шоколадные</label>
+                    <input type="checkbox" class="filling-chose__check filling-chose__check--active" name="strew" id="strew">
+                    <label for="strew" class="filling-chose__label">сахарные присыпки</label>
+                    <input type="checkbox" class="filling-chose__check filling-chose__check--active" name="fruit" id="fruit">
+                    <label for="fruit" class="filling-chose__label">фрукты</label>
+                    <input type="checkbox" class="filling-chose__check filling-chose__check--active" name="syrup" id="syrup">
+                    <label for="syrup" class="filling-chose__label">сиропы</label>
+                    <input type="checkbox" class="filling-chose__check filling-chose__check--active" name="jam" id="jam">
+                    <label for="jam" class="filling-chose__label">джемы</label>
+                </fieldset>
+            </div>
+            
+            <input type="submit" name="filter-sub" id="field-filter-sub" class="filter__sub filter__sub-active">
+        </form>
+        
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       310
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+           
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       380
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочно-кофейное с кусочками шоколада
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       355
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочно-клубничное с присыпкой из белого шоколада
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       415
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное крем-брюле с карамельной подливкой
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       325
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное с брусничным джемом
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       410
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочно-черничное с цельными ягодами черники 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       375
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочно-лимонное с карамельной присыпкой
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       320
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное с шоколадной стружкой
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       440
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочно-ванильное с кусочками шоколада
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       435
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочноe с ментоловым сиропом
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       355
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное с кусочками черного шоколада
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream__hidden-ice-cream">
+               <div class="ice-cream__content-ice-cream">
+                    <figure class="content-ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="content-ice-cream__price-ice-cream">
+                       420
+                        <span class="pricet-ice-cream__ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="content-ice-cream__description-ice-cream">
+                        Сливочное с мятным сиропом
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="btn hidden-ice-cream__btn hidden-ice-cream__btn--active">Быстрый просмотр</button>
+            </div>
+        </article>
+        
+        <nav class="pages">
+            <a href="#" class="pages__back pages__back--active"><img src="http://placehold.it/5x5" alt="Стрелочка влево"></a>
+            <a href="#" class="pages__link pages__link--active"></a>
+            <a href="#" class="pages__link pages__link--active"></a>
+            <a href="#" class="pages__link pages__link--active"></a>
+            <a href="#" class="pages__link pages__link--active"></a>
+            <a href="#" class="pages__link pages__link--active"></a>
+            <a href="#" class="pages__next pages__next--active"><img src="http://placehold.it/5x5" alt="Стрелочка вправо"></a>
+        </nav>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container-footer">
+            <section class="container-footer__social">
+                <a href="#" class="social__btn-social social__btn-social--active">Твитер</a>
+                <a href="#" class="social__btn-social social__btn-social--active">Инстаграм</a>
+                <a href="#" class="social__btn-social social__btn-social--active">Фейсбук</a>
+                <a href="#" class="social__btn-social social__btn-social--active">Вконтакте</a>
+            </section>
+            
+            <nav class="container-footer__footer-info">
+                
+                    <p class="footer-info__item-footer footer-info__item-footer--active">
+                        <a href="#" class="item-footer__link item-footer__link--active">
+                            <span class="link__text"><!--псевдоэлемент сердечко-->Для поставщиков</span>
+                        </a>
+                    </p>
+                    <p class="footer-info__item-footer footer-info__item-footer--active">
+                        <a href="#" class="item-footer__link item-footer__link--active">О производстве</a>
+                    </p>
+                    <p class="footer-info__item-footer footer-info__item-footer--active">
+                        <a href="#" class="item-footer__link item-footer__link--active">Наши документы</a>
+                    </p>
+                    <p class="footer-info__item-footer footer-info__item-footer--active">
+                        <a href="#" class="item-footer__link item-footer__link--active">Экологические стандарты</a>
+                    </p>
+                
+            </nav>
+            
+            <section class="copiright">
+                <figure class="copiright__logo">
+                    <img src="http://placehold.it/50x50" alt="HtmlAcademy">
+                </figure>
+                
+                <p class="copiright__text-copiright">Сделано в <a href="#" class="text-copiright__link">HTML Academy</a> &#169; 2016</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
