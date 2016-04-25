@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-     <header class="main-header">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Глейси(каталог)</title>
+</head>
+<body>
+    <header class="main-header">
         <figure class="main-header__logo">
             <img src="http://placehold.it/50x50" alt="GllasyShop">
         </figure>
@@ -126,60 +126,80 @@
                 8 812 450-25-25
             </p>
         </div>
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__navigation">
+                <a href="#" class="breadcrumbs__link">Главная <!--Псевдоэлемент с разделителем--></a>
+                <a href="#" class="breadcrumbs__link">Каталог <!--Псевдоэлемент с разделителем--></a>
+                <a href="#" class="breadcrumbs__link breadcrumbs__link--text-decoration">Сливочное</a>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <article class="slider">
-            <figure class="slider__img">
-                <img src="http://placehold.it/150x100" alt="Мороженное крем-брюле и мороженное с малиновым джемом">
-            </figure>
-            
-            <div class="slider__chose">
-                <h1 class="slider__info slider__info1">
-                    Крем-брюле и пломбир
-                    с малиновым джемом
-                </h1>
-                <a href="#" class="slider__btn btn btn-red">Давайте оба!</a>
-            </div>
-            
-            <div class="slider-btn">
-                <input type="radio" name="toggle" id="slider-btn1" class="slider-btn__toggle slider-btn__toggle1">
-                <input type="radio" name="toggle" id="slider-btn2" class="slider-btn__toggle slider-btn__toggle2">
-                <input type="radio" name="toggle" id="slider-btn3" class="slider-btn__toggle slider-btn__toggle3">
-            </div>
-            
-            <div class="slader-control">
-                <label for="slider-btn1" class="slader-control__label slader-control__label1"></label>
-                <label for="slider-btn2" class="slader-control__label slader-control__label2"></label>
-                <label for="slider-btn3" class="slader-control__label slader-control__label3"></label>
-            </div>
-        </article>
+        <h1 class="caption">Сливочное мороженое</h1>
         
-        <article class="banner block">
-            <div class="banner__content">
-                <h2 class="banner__caption">
-                    Малинка даром!
-                </h2>
+        <form action="#" method="post" class="filter">
+            <div class="filter__sort">
+                <p class="filter__caption">Сортировка:</p>
+                <div class="filter__select-sort filter__box">
+                    <select name="sort" id="field-sort" class="filter__select">
+                        <option value="">по популярности</option>
+                        <option value="">сначала недорогие</option>
+                        <option value="">сначала недорогие</option>
+                        <option value="">по жирности</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter__cost">
+                <p class="filter__caption">Цена: </p>
+                <output name="from-to" class="filter__range-output">100 руб. – 500 руб.</output>
                 
-                <p class="banner__text">
-                    При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-                </p>
-            </div>    
-                <a href="#" class="banner__btn btn btn-red">Хочу варенье!</a>
-        </article> 
-           
-        <article class="banner block">     
-            <div class="banner__content">
-                <h2 class="banner__caption">
-                    Шоколадки даром!
-                </h2>
+               <div class="range-filter filter__box">
+                    <div class="range-filter__range-controls">
+                        <div class="range-controls__scale">
+                            <div style="margin-left:50px;width:100px;" class="scale__bar"></div>
+                        </div>
+                        <div class="range-controls__toggle range-controls__min-toggle"></div>
+                        <div class="range-controls__toggle range-controls__max-toggle"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter__fatness">
+                <p class="filter__caption">Жирность:</p>
                 
-                <p class="banner__text">
-                    При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-                </p>
-            </div>    
-                <a href="#"class="banner__btn btn btn-red">Хочу шоколадки!</a>
-        </article>    
+                <fieldset class="percent-fatness filter__box">
+                    <input type="radio" class="percent-fatness__percent" name="fatness" valur="0%" id="p0">
+                    <label for="p0" class="percent-fatness__label">0%</label>
+                    <input type="radio" class="percent-fatness__percent" name="fatness" value="before 10%" id="p10">
+                    <label for="p10" class="percent-fatness__label">до 10%</label>
+                    <input type="radio" class="percent-fatness__percent" name="fatness" value="before 30%" id="p30">
+                    <label for="p30" class="percent-fatness__label">до 30%</label>
+                    <input type="radio" class="percent-fatness__percent" name="fatness" value="more 30%" id="more-p30">
+                    <label for="more-p30" class="percent-fatness__label">выше 30%</label>
+                </fieldset>
+            </div>
+            
+            <div class="filter__filling">
+                <p class="filter__caption">Наполнители:</p>
+                
+                <fieldset class="filling-chose filter__box">
+                    <input type="checkbox" class="filling-chose__check" name="chocolate" id="chocolate">
+                    <label for="chocolate" class="filling-chose__label">шоколадные</label>
+                    <input type="checkbox" class="filling-chose__check" name="strew" id="strew">
+                    <label for="strew" class="filling-chose__label">сахарные присыпки</label>
+                    <input type="checkbox" class="filling-chose__check" name="fruit" id="fruit">
+                    <label for="fruit" class="filling-chose__label">фрукты</label>
+                    <input type="checkbox" class="filling-chose__check" name="syrup" id="syrup">
+                    <label for="syrup" class="filling-chose__label">сиропы</label>
+                    <input type="checkbox" class="filling-chose__check" name="jam" id="jam">
+                    <label for="jam" class="filling-chose__label">джемы</label>
+                </fieldset>
+            </div>
+            
+            <input type="submit" name="filter-sub" id="field-filter-sub" class="filter__sub btn btn__user-block">
+        </form>
         
         <article class="ice-cream">
             <div class="ice-cream-hidden">
@@ -268,139 +288,192 @@
                 <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
             </div>
         </article>
-        
-        <section class="block main-info">
-            <h2 class="main-info__caption">
-                Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
-            </h2>
-            
-            <div class="main-info__content ice-lolly">
-                <!--Псевдоэлемент с картинкой-->
-                <p class="main-info__text">
-                    Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-                </p>
-            </div>
-               
-            <div class="main-info__content leaf">
-                <!--Псевдоэлемент с картинкой-->
-                <p class="main-info__text">
-                    Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-                </p>
-            </div>
-               
-            <div class="main-info__content cow">
-                <!--Псевдоэлемент с картинкой-->
-                <p class="main-info__text">
-                    Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                </p>
-            </div>
-               
-            <div class="main-info__content thermometer">
-                <!--Псевдоэлемент с картинкой-->
-                <p class="main-info__text">
-                    Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
-                </p>
-            </div>
-        </section>
-        
-        <article class="block blog">
-           <div class="blog__content">
-                <p class="blog__text">Новое в нашем блоге</p>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
 
-                <h2 class="blog__caption">
-                    10  способов сервировки
-                    фруктовых щербетов
-                    к столу
-                </h2>
-            </div>
-            
-            <figure class="blog__background">
-                <img src="http://placehold.it/100x50" alt="Мороженное с кусочками клубники">
-            </figure>
-        </article>
-        
-        <article class="block subscription">
-            <div class="subscription__content">
-                <p class="subscription__text">
-                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
-                </p>
-                
-                <form action="#" method="post" class="subscription__form">
-                    <input type="email" name="e-mail" id="e-mail-field" placeholder="Электронная почта" class="subscription__e-mail input-view">
-
-                    <input type="submit" name="sub-e-mail" id="submit-field" value="Отправить" class="subscription__btn btn btn-red">
-                </form>
-            </div>
-        </article>
-        
-        <article class="location">
-            <figure class="location__map">
-                <img src="http://placehold.it/250x200" alt="Карта">
-            </figure>
-            
-            <div class="location-info">
-                <div class="location-info__feedback">
-                    <p class="location-info__text">
-                        Адрес главного офиса и
-                        офлайн магазина:
+                    <p class="ice-cream__price">
+                       325
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
                     </p>
-                    
-                    <p class="location-info__text--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                    
-                    <p class="location-info__text">Для заказов по телефону:</p>
-                    
-                    <p class="location-info__text">
-                        <span class="location-info__text--bold">8 812 450-25-25</span>
-                        (с 10 до 20 ежедневно)
+
+                    <p class="ice-cream__description">
+                        Сливочное с брусничным джемом
                     </p>
                 </div>
-                <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red">Форма обратной связи</button>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       410
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочно-черничное с цельными ягодами черники 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       375
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочно-лимонное с карамельной присыпкой 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       320
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочное с шоколадной стружкой 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       440
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочно-ванильное с кусочками шоколада 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       435
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочноe с ментоловым сиропом 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       355
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочное с кусочками черного шоколада 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+            </div>
+        </article>
+                   
+        <article class="ice-cream">
+            <div class="ice-cream-hidden">
+               <div class="ice-cream__content">
+                    <figure class="ice-cream__preview">
+                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                    </figure>
+
+                    <p class="ice-cream__price">
+                       420
+                        <span class="ruble"><!--псевдоэлемент знак рубль--></span>
+                        /кг
+                    </p>
+
+                    <p class="ice-cream__description">
+                        Сливочное с мятным сиропом 
+                    </p>
+                </div>
+               
+                <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
             </div>
         </article>
         
-        <article class="feedback">
-            <p class="feedback__text--bold">Мы обязательно вам ответим!</p>
-            
-            <figure class="close">
-                <img src="http://placehold.it/5x5" alt="Крестик">
-            </figure>
-            
-            <form action="#" method="post" class="feedback-form">
-                <input type="text" name="your-name" id="your-name" placeholder="Как вас зовут?" class="feedback-form__name input-view">
-                
-                <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" class="feedback-form__email input-view">
-                
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment input-view"></textarea>
-                
-                <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
-            </form>
-        </article>
-        
-        <footer>
-            <section class="social">
-                <a href="#" class="btn-social">Твитер</a>
-                <a href="#" class="btn-social">Инстаграм</a>
-                <a href="#" class="btn-social">Фейсбук</a>
-                <a href="#" class="btn-social">Вконтакте</a>
-            </section>
-            
-            <nav class="footer-info">
-                <ul>
-                    <li><a href="#"><span><!--псевдоэлемент сердечко-->Для поставщиков</span></a></li>
-                    <li><a href="#">О производстве</a></li>
-                    <li><a href="#">Наши документы</a></li>
-                    <li><a href="#">Экологические стандарты</a></li>
-                </ul>
-            </nav>
-            
-            <section class="copiright">
-                <figure class="htmlacademy">
-                    <img src="http://placehold.it/20x20" alt="HtmlAcademy">
-                </figure>
-            
-                <p>Сделано в <a href="#">HTML Academy</a> &#169; 2016</p>
-            </section>    
-        </footer>
+        <nav class="pages">
+            <a href="#" class="pages__link pages__back"><img src="http://placehold.it/5x5" alt="Стрелочка влево"></a>
+            <a href="#" class="pages__link">1</a>
+            <a href="#" class="pages__link">2</a>
+            <a href="#" class="pages__link">3</a>
+            <a href="#" class="pages__link">4</a>
+            <a href="#" class="pages__link">5</a>
+            <a href="#" class="pages__link pages__next"><img src="http://placehold.it/5x5" alt="Стрелочка вправо"></a>
+        </nav>
     </main>
     
     <footer class="footer">
@@ -440,6 +513,6 @@
                 <p class="copiright__text">Сделано в <a href="#" class="copiright__link">HTML Academy</a> &#169; 2016</p>
             </section>
         </div>
-    </footer>              
-  </body>
+    </footer>
+</body>
 </html>
