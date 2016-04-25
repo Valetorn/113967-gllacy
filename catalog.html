@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Глейси(каталог)</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="main-header">
         <figure class="main-header__logo">
-            <img src="http://placehold.it/50x50" alt="GllasyShop">
+            <img src="img/Logo.svg" alt="GllasyShop">
         </figure>
         
         <nav class="main-header__main-menu">
@@ -38,13 +39,13 @@
         
         <div class="user-block">
             <div class="user-block__search-block">
-                <a href="#" class="user-block__search user-block__search--radius btn btn__user-block">
+                <button type="submit" name="search-btn" id="search-btn" form="search-form" class="user-block__search user-block__search--radius btn btn__user-block">
                     <img src="http://placehold.it/50x50" alt="Лупа">
-                </a>
+                </button>
                 
-                <div class="search-hidden">
+                <form id="search-form" class="search-hidden">
                     <input type="search" placeholder="Что ищем?" id="search-field" class="search-hidden__input input-view">   
-                </div>
+                </form>
             </div>
                
             <div class="user-block__login-block">
@@ -60,12 +61,12 @@
                     
                     <input type="submit" name="enter" id="enter-field" value="Войти" class="login-form__btn btn btn-red">
                     
-                    <p class="login-form__links">
+                    <div class="login-form__links">
                         <a href="#" class="login-form__link">Забыли пароль?</a>
-                    </p>
-                    <p class="login-form__links">
+                    </div>
+                    <div class="login-form__links">
                         <a href="#" class="login-form__link">Новая регистрация</a>
-                    </p>
+                    </div>
                 </form>
             </div>
                
@@ -86,9 +87,9 @@
                                <figcaption class="cart-hidden__ice-cream-comment">Пломбир с апельсиновым джемом</figcaption>
                             </figure>
                             
-                            <p class="cart-hidden__text">
+                            <div class="cart-hidden__text">
                                 1,5 кг х <span class="cart-hidden__text--grey">200 руб.</span> 300 руб.
-                            </p>
+                            </div>
                         </div>
                            
                         <div class="cart-hidden__content2">
@@ -101,16 +102,16 @@
                                                                                                  из белого шоколада</figcaption>
                             </figure>
                             
-                            <p class="cart-hidden__text">
+                            <div class="cart-hidden__text">
                                 1,5 кг х <span class="cart-hidden__text--grey">300 руб.</span> 450 руб.
-                            </p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="cart-hidden__order">
-                        <p class="cart-hidden__text--bold">
+                        <div class="cart-hidden__text--bold">
                             Итого: 750 руб.
-                        </p>
+                        </div>
                         
                         <form action="#" method="post" class="order-form">
                             <input type="submit" name="order" id="order-field" value="Оформить заказ" class="order-form__input btn btn-red">
@@ -118,12 +119,11 @@
                     </div>
                 </div>
             </div>
-            <p class="user-block__inform-working">
+            <p>
                 С 10 до 20, ежедневно
-            </p>
-                
-            <p class="user-block__inform-phone">
-                8 812 450-25-25
+                <span class="user-block__text--bold">
+                    8 812 450-25-25
+                </span>
             </p>
         </div>
         <nav class="breadcrumbs">
@@ -152,7 +152,7 @@
             </div>
             
             <div class="filter__cost">
-                <p class="filter__caption">Цена: </p>
+                <span class="filter__caption">Цена: </span>
                 <output name="from-to" class="filter__range-output">100 руб. – 500 руб.</output>
                 
                <div class="range-filter filter__box">
@@ -167,7 +167,7 @@
             </div>
             
             <div class="filter__fatness">
-                <p class="filter__caption">Жирность:</p>
+                <span class="filter__caption">Жирность:</span>
                 
                 <fieldset class="percent-fatness filter__box">
                     <input type="radio" class="percent-fatness__percent" name="fatness" valur="0%" id="p0">
@@ -182,7 +182,7 @@
             </div>
             
             <div class="filter__filling">
-                <p class="filter__caption">Наполнители:</p>
+                <span class="filter__caption">Наполнители:</span>
                 
                 <fieldset class="filling-chose filter__box">
                     <input type="checkbox" class="filling-chose__check" name="chocolate" id="chocolate">
@@ -205,16 +205,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/1.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        310
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное с апельсиновым джемом и цитрусовой стружкой
                     </p>
                 </div>
@@ -227,16 +227,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/2.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        380
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочно-кофейное с кусочками шоколада
                     </p>
                 </div>
@@ -249,16 +249,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/3.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        355
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочно-клубничное с присыпкой из белого шоколада
                     </p>
                 </div>
@@ -271,16 +271,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/4.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        415
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное крем-брюле с карамельной подливкой
                     </p>
                 </div>
@@ -293,16 +293,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/5.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        325
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное с брусничным джемом
                     </p>
                 </div>
@@ -315,16 +315,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/6.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        410
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочно-черничное с цельными ягодами черники 
                     </p>
                 </div>
@@ -337,16 +337,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/7.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        375
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочно-лимонное с карамельной присыпкой 
                     </p>
                 </div>
@@ -359,16 +359,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/8.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        320
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное с шоколадной стружкой 
                     </p>
                 </div>
@@ -381,16 +381,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/9.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        440
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочно-ванильное с кусочками шоколада 
                     </p>
                 </div>
@@ -403,16 +403,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/10.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        435
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочноe с ментоловым сиропом 
                     </p>
                 </div>
@@ -425,16 +425,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/11.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        355
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное с кусочками черного шоколада 
                     </p>
                 </div>
@@ -447,16 +447,16 @@
             <div class="ice-cream-hidden">
                <div class="ice-cream__content">
                     <figure class="ice-cream__preview">
-                        <img src="http://placehold.it/100x100" alt="Мороженное">
+                        <img src="img/12.png" alt="Мороженное">
                     </figure>
 
-                    <p class="ice-cream__price">
+                    <div class="ice-cream__price">
                        420
                         <span class="ruble"><!--псевдоэлемент знак рубль--></span>
                         /кг
-                    </p>
+                    </div>
 
-                    <p class="ice-cream__description">
+                    <p>
                         Сливочное с мятным сиропом 
                     </p>
                 </div>
@@ -486,33 +486,33 @@
             </section>
             
             <nav class="footer-info">
-                <p class="footer-info__item footer-info__busy">
+                <div class="footer-info__item footer-info__busy">
                     <a href="#" class="footer-info__link footer-info__link--img">
                         <span class="footer-info__text footer-info__text--bold"><!--псевдоэлемент сердечко-->Для поставщиков</span>
                     </a>
-                </p>
+                </div>
                     
-                <p class="footer-info__item footer-info__produce">
+                <div class="footer-info__item footer-info__produce">
                     <a href="#" class="footer-info__link">О производстве</a>
-                </p>
+                </div>
                     
-                <p class="footer-info__item footer-info__document">
+                <div class="footer-info__item footer-info__document">
                     <a href="#" class="footer-info__link">Наши документы</a>
-                </p>
+                </div>
                     
-                <p class="footer-info__item footer-info__eco">
+                <div class="footer-info__item footer-info__eco">
                     <a href="#" class="footer-info__link">Экологические стандарты</a>
-                </p>
+                </div>
             </nav>
             
             <section class="copiright">
                 <figure class="copiright__logo">
-                    <img src="http://placehold.it/50x50" alt="HtmlAcademy">
+                    <img src="img/%D0%9B%D0%BE%D0%B3%D0%BE.svg" alt="HtmlAcademy">
                 </figure>
                 
-                <p class="copiright__text">Сделано в <a href="#" class="copiright__link">HTML Academy</a> &#169; 2016</p>
+                <div class="copiright__text">Сделано в <a href="#" class="copiright__link">HTML Academy</a> &#169; 2016</div>
             </section>
         </div>
-    </footer>
+    </footer>              
 </body>
 </html>
