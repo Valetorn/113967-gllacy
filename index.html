@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index">
@@ -80,7 +80,7 @@
                             <div class="user-block__form form-view">   
                                 <form action="#" method="post" class="login-form">
                                     <div class="input-container">
-                                        <input type="text" name="e-mail" placeholder="Электронная почта" id="e-mail-field" required class="login-form__e-mail login-form__input input-view">
+                                        <input type="text" name="e-mail" placeholder="Электронная почта" id="e-mail-login" required class="login-form__e-mail login-form__input input-view">
                                         <label for="e-mail-field" class="label__form">Электронная почта</label>
                                     </div>    
                                     
@@ -167,7 +167,7 @@
                                 вкуснейшей шоколадной присыпки совершенно бесплатно.
                             </p>
                             
-                            <a href="#"class="banner__btn btn btn-red">Хочу шоколадки!</a>
+                            <a href="#" class="banner__btn btn btn-red">Хочу шоколадки!</a>
                         </div>    
                             
                     </article>    
@@ -187,12 +187,14 @@
                             </div>
 
                             <p>
-                                Сливочное с апельсиновым джемом и цитрусовой стружкой
-                            </p>
+                                <a href="#" class="ice-cream__link link">
+                                    Сливочное с апельсиновым джемом и цитрусовой стружкой
+                                </a>
+                            </p>    
                         </div>
 
                         <div class="ice-cream__hidden">
-                            <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+                            <button type="button" name="quick-view1" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
                         </div>
                     </article>
 
@@ -208,13 +210,15 @@
                                 <span class="ruble"><!--псевдоэлемент знак рубль-->/кг</span>
                             </div>
 
-                            <p>
-                                Сливочно-кофейное с кусочками шоколада
-                            </p>
+                            <p> 
+                                <a href="#" class="ice-cream__link link">
+                                    Сливочно-кофейное с кусочками шоколада
+                                </a>
+                            </p>      
                         </div>
 
                         <div class="ice-cream__hidden">
-                            <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+                            <button type="button" name="quick-view" id="quick-view2" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
                         </div>
                     </article>
 
@@ -231,13 +235,15 @@
                                 <span class="ruble"><!--псевдоэлемент знак рубль-->/кг</span>
                             </div>
 
-                            <p>
-                                Сливочно-клубничное с присыпкой из белого шоколада
-                            </p>
+                            <p>   
+                                <a href="#" class="ice-cream__link link">
+                                    Сливочно-клубничное с присыпкой из белого шоколада
+                                </a>
+                            </p>     
                         </div>
 
                         <div class="ice-cream__hidden">
-                            <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+                            <button type="button" name="quick-view" id="quick-view3" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
                         </div>
                     </article>
 
@@ -254,12 +260,14 @@
                             </div>
 
                             <p>
-                                Сливочное крем-брюле с карамельной подливкой
-                            </p>
+                                <a href="#" class="ice-cream__link link">
+                                    Сливочное крем-брюле с карамельной подливкой
+                                </a>
+                            </p>       
                         </div>
 
                         <div class="ice-cream__hidden">
-                            <button type="button" name="quick-view" id="quick-view" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
+                            <button type="button" name="quick-view" id="quick-view4" value="Быстрый просмотр" class="ice-cream-hidden__btn btn btn-red">Быстрый просмотр</button>
                         </div>
                     </article>
                 </div>    
@@ -337,7 +345,7 @@
 
                 <article class="location">
                     <figure class="location__map">
-                        <img src="img/Layer_3.png" width="1200" height="430" alt="Карта">
+                        <img src="img/layer_3.png" width="1200" height="430" alt="Карта">
                     </figure>
 
                     <div class="location-info block">
@@ -354,26 +362,8 @@
                                 (с 10 до 20 ежедневно)
                             </div>
                         </div>
-                        <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red">Форма обратной связи</button>
+                        <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red" onClick="show('block')">Форма обратной связи</button>
                     </div>
-                </article>
-
-                <article class="feedback">
-                    <span class="feedback__text--bold">Мы обязательно вам ответим!</span>
-
-                    <figure class="close">
-                        <img src="http://placehold.it/5x5" alt="Крестик">
-                    </figure>
-
-                    <form action="#" method="post" class="feedback-form">
-                        <input type="text" name="your-name" id="your-name" placeholder="Как вас зовут?" class="feedback-form__name input-view">
-
-                        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" class="feedback-form__email input-view">
-
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment input-view"></textarea>
-
-                        <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
-                    </form>
                 </article>
             </main>
 
@@ -421,6 +411,33 @@
                         </section>
                     </div>
             </footer>
-        </div>                  
+        </div> 
+        <div class="feedback-wraper" id="wrap-feedback">
+            <section class="feedback" id="feedback">
+               <div class="feedback__text">
+                    <span class="feedback__text--bold">Мы обязательно вам ответим!</span>
+                </div>
+
+                <button type="button" class="feedback__close" onClick="show('none')">Close</button>
+
+                <form action="#" method="post" class="feedback-form">
+                    <div class="input-container">   
+                        <input type="text" name="your-name" id="your-name" placeholder="Как вас зовут?" required class="feedback-form__name feedback-form__input input-view">
+                        <label for="your-name" class="label__form">Как вас зовут?</label>
+                    </div>    
+
+                    <div class="input-container">   
+                        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required class="feedback-form__email feedback-form__input input-view">
+                        <label for="feedback-email" class="label__form">Ваша почта для ответа?</label>
+                    </div>    
+
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment feedback-form__input input-view"></textarea>
+
+                    <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
+                </form>
+            </section> 
+        </div>
+         
+    <script src="js/script.js"></script>                          
   </body>
 </html>
