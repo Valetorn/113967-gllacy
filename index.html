@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index">
     <input type="radio" name="toggle" id="slider-btn1" class="slider-btn__toggle slider-btn__toggle1" checked>
     <input type="radio" name="toggle" id="slider-btn2" class="slider-btn__toggle slider-btn__toggle2">
     <input type="radio" name="toggle" id="slider-btn3" class="slider-btn__toggle slider-btn__toggle3">
@@ -16,19 +16,19 @@
         <header class="main-header">
                 <div class="main-header__container">   
                     <figure class="main-header__logo">
-                        <img src="img/logo.svg" alt="GllasyShop" width="154" height="64">
+                        <a href="#"><img src="img/logo.svg" alt="GllasyShop" width="154" height="64"></a>
                     </figure>
 
                     <nav class="main-header__main-menu">
                         <ul class="main-header__navigation">
                             <li class="main-header__menu main-header__menu--active">
-                                <a href="#" class="main-header__link main-header__link--active header-link btn">Каталог</a>
+                                <a href="catalog.html" class="main-header__link main-header__link--active header-link btn">Каталог</a>
 
                                 <ul class="navigation-hidden">
                                     <li class="navigation-hidden__item navigation-hidden__item--border">
                                         <a href="#" class="navigation-hidden__link navigation-hidden__link--bold header-link">Новинки</a>
                                     </li>
-                                    <li class="navigation-hidden__item"><a href="#" class="navigation-hidden__link header-link">Сливочное</a></li>
+                                    <li class="navigation-hidden__item"><a href="catalog.html" class="navigation-hidden__link header-link">Сливочное</a></li>
                                     <li class="navigation-hidden__item"><a href="#" class="navigation-hidden__link header-link">Щербеты</a></li>
                                     <li class="navigation-hidden__item"><a href="#" class="navigation-hidden__link header-link">Фруктовый лед</a></li>
                                     <li class="navigation-hidden__item"><a href="#" class="navigation-hidden__link header-link">Мелорин</a></li>
@@ -63,7 +63,10 @@
 
                             <div class="search-hidden form-view">     
                                <form id="search-form" class="search-hidden__form">
-                                    <input type="search" placeholder="Что ищем?" id="search-field" class="search-hidden__input input-view">   
+                                    <div class="input-container">  
+                                        <input type="search" placeholder="Что ищем?" id="search-field" required class="search-hidden__input input-view">
+                                        <label for="search-field" class="label__form">Что ищем?</label>
+                                    </div>        
                                 </form>
                             </div>    
                         </div>
@@ -76,9 +79,15 @@
 
                             <div class="user-block__form form-view">   
                                 <form action="#" method="post" class="login-form">
-                                    <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-field" class="login-form__e-mail login-form__input input-view">
-
-                                    <input type="password" name="password" placeholder="Пароль" id="password-field" class="login-form__password login-form__input input-view">
+                                    <div class="input-container">
+                                        <input type="text" name="e-mail" placeholder="Электронная почта" id="e-mail-field" required class="login-form__e-mail login-form__input input-view">
+                                        <label for="e-mail-field" class="label__form">Электронная почта</label>
+                                    </div>    
+                                    
+                                    <div class="input-container">   
+                                        <input type="password" name="password" placeholder="Пароль" id="password-field" required class="login-form__password login-form__input input-view">
+                                        <label for="password-field" class="label__form">Пароль</label>
+                                    </div>    
 
                                     <input type="submit" name="enter" id="enter-field" value="Войти" class="login-form__btn btn btn-red">
 
@@ -100,9 +109,8 @@
                         </div>
                     </div> 
                 </div>
-
-                
             </header>
+        
 
             <main>
                 <div class="slider">
@@ -142,8 +150,10 @@
                                 При покупке 2 кг любого фруктового мороженого, добавим
                                 в ваш заказ банку малинового варенья бесплатно.
                             </p>
-                        </div>    
+                            
                             <a href="#" class="banner__btn btn btn-red">Хочу варенье!</a>
+                        </div>    
+                            
                     </article> 
 
                     <article class="banner banner2 block">     
@@ -156,8 +166,10 @@
                                 При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                                 вкуснейшей шоколадной присыпки совершенно бесплатно.
                             </p>
-                        </div>    
+                            
                             <a href="#"class="banner__btn btn btn-red">Хочу шоколадки!</a>
+                        </div>    
+                            
                     </article>    
                 </div> 
 
@@ -312,9 +324,12 @@
                             </p>
 
                             <form action="#" method="post" class="subscription__form">
-                                <input type="email" name="e-mail" id="e-mail-field" placeholder="Электронная почта" class="subscription__e-mail input-view">
-
-                                <input type="submit" name="sub-e-mail" id="submit-field" value="Отправить" class="subscription__btn btn btn-red">
+                                <div class="input-container"> 
+                                    <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта" required class="subscription__e-mail input-view">
+                                    <label for="e-mail-field" class="label__form">Электронная почта</label>
+                                
+                                    <input type="submit" name="sub-e-mail" id="submit-field" value="Отправить" class="subscription__btn btn btn-red">
+                                </div>    
                             </form>
                         </div>
                     </article>
@@ -328,14 +343,14 @@
                     <div class="location-info block">
                         <div class="location-info__feedback">
                             <div class="location-info__text location-info__address">
-                                Адрес главного офиса и
+                                Адрес главного офиса и<br>
                                 офлайн магазина:
-                                <span class="location-info__text--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                                <span class="location-info__text-address location-info__text--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                             </div>    
 
                             <div class="location-info__text location-info__phone">   
                                 Для заказов по телефону:
-                                <span class="location-info__text--bold">8 812 450-25-25</span>
+                                <span class="location-info__text-phone location-info__text--bold">8 812 450-25-25</span>
                                 (с 10 до 20 ежедневно)
                             </div>
                         </div>
