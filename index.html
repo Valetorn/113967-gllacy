@@ -354,26 +354,8 @@
                                 (с 10 до 20 ежедневно)
                             </div>
                         </div>
-                        <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red">Форма обратной связи</button>
+                        <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red" onClick="show('block')">Форма обратной связи</button>
                     </div>
-                </article>
-
-                <article class="feedback">
-                    <span class="feedback__text--bold">Мы обязательно вам ответим!</span>
-
-                    <figure class="close">
-                        <img src="http://placehold.it/5x5" alt="Крестик">
-                    </figure>
-
-                    <form action="#" method="post" class="feedback-form">
-                        <input type="text" name="your-name" id="your-name" placeholder="Как вас зовут?" class="feedback-form__name input-view">
-
-                        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" class="feedback-form__email input-view">
-
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment input-view"></textarea>
-
-                        <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
-                    </form>
                 </article>
             </main>
 
@@ -421,6 +403,33 @@
                         </section>
                     </div>
             </footer>
-        </div>                  
+        </div> 
+        <div class="feedback-wraper" id="wrap-feedback">
+            <section class="feedback" id="feedback">
+               <div class="feedback__text">
+                    <span class="feedback__text--bold">Мы обязательно вам ответим!</span>
+                </div>
+
+                <button type="button" class="feedback__close" onClick="show('none')">Close</button>
+
+                <form action="#" method="post" class="feedback-form">
+                    <div class="input-container">   
+                        <input type="text" name="your-name" id="your-name" placeholder="Как вас зовут?" required class="feedback-form__name feedback-form__input input-view">
+                        <label for="your-name" class="label__form">Как вас зовут?</label>
+                    </div>    
+
+                    <div class="input-container">   
+                        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required class="feedback-form__email feedback-form__input input-view">
+                        <label for="feedback-email" class="label__form">Ваша почта для ответа?</label>
+                    </div>    
+
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment feedback-form__input input-view"></textarea>
+
+                    <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
+                </form>
+            </section> 
+        </div>
+         
+    <script src="js/script.js"></script>                          
   </body>
 </html>
