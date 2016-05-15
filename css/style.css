@@ -8,6 +8,7 @@ body {
   color: #323232;
   font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
+  
 }
 /* site-wrapper */
 
@@ -15,6 +16,7 @@ body {
   min-width: 1200px;
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -99,10 +101,9 @@ img {
 .input-view {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: 13px 0;
   padding-left: 14px;
   font-size: 14px;
-  line-height: 24px;
   font-weight: 400;
   color: #323232;
 }
@@ -127,6 +128,18 @@ img {
 }
 .input-view:hover {
   box-shadow: 0 0 0 1px #d3d3d2;
+}
+::-webkit-input-placeholder {
+  color:#999999;
+}
+::-moz-placeholder {
+  color:#999999;
+}
+:-moz-placeholder {
+  color:#999999;
+}
+:-ms-input-placeholder {
+  color:#999999;
 }
 :focus::-webkit-input-placeholder {
   color: transparent
@@ -289,9 +302,9 @@ img {
 /* user-block */
 
 .user-block {
-  width: 267px;
-  float: right;
-  padding-left: 26px;
+  width: 268px;
+  float: left;
+  padding-left: 25px;
   margin-top: 22px;
   font-size: 0;
 }
@@ -340,7 +353,7 @@ img {
   display: none;
   position: absolute;
   top: 38px;
-  right: 0;
+  right: -1px;
   z-index: -1;
 }
 .search-hidden::before {
@@ -351,7 +364,7 @@ img {
   height: 50px;
 }
 .search-hidden__form {
-  padding: 18px 16px;
+  padding: 19px 16px;
 }
 .search-hidden__input {
   width: 310px;
@@ -379,7 +392,7 @@ img {
 .user-block__form {
   position: absolute;
   top: 37px;
-  right: -2px;
+  right: -3px;
   display: none;
   z-index: -1;
 }
@@ -392,13 +405,13 @@ img {
   height: 10px;
 }
 .login-form {
-  padding-top: 19px;
+  padding: 21px 0;
   padding-left: 19px;
   padding-right: 17px;
 }
 .login-form__input {
   width: 225px;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 .login-form__links {
   font-size: 13px;
@@ -430,7 +443,7 @@ img {
   background: rgba(255, 255, 255, 0.2) url(../img/basket.svg) no-repeat 18px 49%;
 }
 .catalog .user-block__cart {
-  padding-right: 16px;
+  padding-right: 15px;
   background: #f7f6f3 url(../img/basket_full.png) no-repeat 18px 49%;
   color: #323232;
 }
@@ -450,7 +463,7 @@ img {
   display: none;
   position: absolute;
   top: 37px;
-  right: 0;
+  right: -3px;
   width: 540px;
   min-height: 242px;
   box-sizing: border-box;
@@ -565,14 +578,12 @@ img {
   color: #333333;
   font-weight: 700;
 }
-.cart-hidden__sum::after {
+.sum__container::after {
   content: '';
   display: table;
   clear: both;
 }
 .order-form__input {
-  border: none;
-  outline: none;
   padding: 11px 15px;
   margin-right: -3px;
 }
@@ -605,6 +616,7 @@ main {
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
+  
 }
 .catalog main::after {
   content: '';
@@ -1074,6 +1086,7 @@ main {
 .hit {
   position: absolute;
   top: 0;
+  left: 0;  
   width: 61px;
   height: 61px;
 }
@@ -1262,20 +1275,21 @@ main {
   height: auto;
   position: relative;
   background: #f8f7f4;
-  padding: 30px 20px;
+  padding: 29px 20px;
   margin: 5px;
   color: #5a5a5a;
 }
 .subscription__content p {
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   font-size: 16px;
 }
 .subscription__e-mail {
   width: 352px;
   font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px; ;
+  margin-bottom: 6px;
 }
 .subscription__btn {
   margin-left: 12px;
@@ -1468,7 +1482,7 @@ main {
   border-radius: 50%;
   display: inline-block;
   vertical-align: top;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .social__btn:not(:last-child) {
   margin-right: 10px;
@@ -1543,14 +1557,14 @@ main {
 .copiright {
   width: 267px;
   float: left;
+  white-space: nowrap;
 }
 .copiright__container {
-  padding-left: 77px;
+  padding-left: 79px;
 }
 .copiright__logo {
   margin: 0;
   padding: 0;
-  padding-left: 1px;
   margin-top: -17px;
 }
 .copiright__logo img {
@@ -1600,14 +1614,14 @@ main {
   font-weight: 500;
 }
 .feedback-form__input {
-  padding-bottom: 9px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 .feedback-form__name {
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .feedback-form__email {
   width: 250px;
@@ -1615,15 +1629,13 @@ main {
 }
 .feedback-form__comment {
   width: 412px;
-  height: 137px;
+  height: 136px;
   padding-top: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 .feedback-form__btn {
   float: right;
-  border: none;
-  outline: none;
-  margin-right: 1px;
+  margin-right: 2px;
   padding: 11px 25px;
 }
 .feedback-form__btn::after {

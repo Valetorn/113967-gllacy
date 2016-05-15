@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="index">
     <input type="radio" name="toggle" id="slider-btn1" class="slider-btn__toggle slider-btn__toggle1" checked>
@@ -16,7 +16,7 @@
         <header class="main-header">
                 <div class="main-header__container">   
                     <figure class="main-header__logo">
-                        <a href="#"><img src="img/logo.svg" alt="GllasyShop" width="154" height="64"></a>
+                        <img src="img/logo.svg" alt="GllasyShop" width="154" height="64">
                     </figure>
 
                     <nav class="main-header__main-menu">
@@ -362,7 +362,8 @@
                                 (с 10 до 20 ежедневно)
                             </div>
                         </div>
-                        <button type="button" name="feedback-btn" id="feedback-btn" class="location-info__btn btn btn-red" onClick="show('block')">Форма обратной связи</button>
+                        
+                        <a href="form.html" id="feedback-btn" class="location-info__btn btn btn-red" onClick="show('block')">Форма обратной связи</a>
                     </div>
                 </article>
             </main>
@@ -431,13 +432,16 @@
                         <label for="feedback-email" class="label__form">Ваша почта для ответа?</label>
                     </div>    
 
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." class="feedback-form__comment feedback-form__input input-view"></textarea>
+                    <div class="input-container">   
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..." required class="feedback-form__comment feedback-form__input input-view"></textarea>
+                        <label for="comment" class="label__form">Напишите что-нибудь...</label>
+                    </div>    
 
                     <input type="submit" name="hidden-feedback" id="hidden-feedback" value="Отправить" class="feedback-form__btn btn btn-red">
                 </form>
             </section> 
         </div>
          
-    <script src="js/script.js"></script>                          
+    <script src="js/script.min.js"></script>                          
   </body>
 </html>

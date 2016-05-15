@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>HTML Academy: Глейси(каталог)</title>
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="catalog">
         <div class="site-wrapper">   
@@ -99,6 +99,7 @@
 
                         <div class="user-block__cart-block user-block__cart-block--active user-block__elem">
                             <a href="#" class="user-block__cart  btn btn__user-block">
+                                <!--псевдоэлемент с изображением-->
                                 2 товара
                             </a>
 
@@ -159,9 +160,11 @@
                                 </div>    
 
                                 <div class="cart-hidden__order">
-                                    <div class="cart-hidden__sum">
-                                        Итого: 750 руб.
-                                    </div>
+                                    <div class="sum__container">  
+                                        <div class="cart-hidden__sum">
+                                            Итого: 750 руб.
+                                        </div>
+                                    </div>     
 
                                     <form action="#" method="post" class="order-form">
                                         <input type="submit" name="order" id="order-field" value="Оформить заказ" class="order-form__input btn btn-red">
@@ -192,7 +195,7 @@
 
             <h1 class="main__caption">Сливочное мороженое</h1>
 
-            <form action="index.html" method="post" class="filter">
+            <form action="form.php" method="post" class="filter">
                 <div class="filter__container filter-top">   
                     <div class="filter__sort filter-category">
                         <label class="filter__caption">Сортировка:</label>
