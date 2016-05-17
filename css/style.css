@@ -8,7 +8,6 @@ body {
   color: #323232;
   font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
-  
 }
 /* site-wrapper */
 
@@ -16,7 +15,6 @@ body {
   min-width: 1200px;
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-  
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -130,28 +128,28 @@ img {
   box-shadow: 0 0 0 1px #d3d3d2;
 }
 ::-webkit-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 ::-moz-placeholder {
-  color:#999999;
+  color: #999999;
 }
 :-moz-placeholder {
-  color:#999999;
+  color: #999999;
 }
 :-ms-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 :focus::-webkit-input-placeholder {
-  color: transparent
+  color: transparent;
 }
 :focus::-moz-placeholder {
-  color: transparent
+  color: transparent;
 }
 :focus:-moz-placeholder {
-  color: transparent
+  color: transparent;
 }
 :focus:-ms-input-placeholder {
-  color: transparent
+  color: transparent;
 }
 /* btn */
 
@@ -858,7 +856,7 @@ main {
   height: 21px;
   background: #ffffff;
   border-radius: 50%;
-  box-shadow: 0px 2px 2px 0.00px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .range-controls__toggle:hover {
@@ -1026,12 +1024,12 @@ main {
   position: relative;
 }
 .banner1 {
-  background: #6d1627 url(../img/raspberry_background.png) no-repeat 100% 100%;
+  background: #6d1627 url(../img/raspberry_background.jpg) no-repeat top center;
   background-size: cover;
   margin-right: 26px;
 }
 .banner2 {
-  background: #4d3329 url(../img/chocolate_background.png) no-repeat 100% 100%;
+  background: #4d3329 url(../img/chocolate_background.jpg) no-repeat top center;
   background-size: cover;
 }
 .banner__content {
@@ -1252,9 +1250,9 @@ main {
   font-weight: 500;
 }
 .blog__caption {
+  width: 281px; 
   margin: 0;
   padding-top: 4px;
-  padding-right: 110px;
   text-align: left;
   font-weight: 700;
 }
@@ -1455,7 +1453,7 @@ main {
 /* footer */
 
 .footer {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .footer__container {
   width: 1146px;
